@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(180deg, #0a0f14, #0d1b1f);
+            background: radial-gradient(circle at top, #0d1f1a, #050a0d);
             color: white;
             display: flex;
             align-items: center;
@@ -25,6 +25,7 @@
         img {
             width: 200px;
             margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px rgba(60, 255, 127, 0.4));
         }
 
         h1 {
@@ -32,6 +33,7 @@
             margin: 10px 0;
             color: #3cff7f;
             letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(60, 255, 127, 0.5);
         }
 
         h2 {
@@ -43,9 +45,10 @@
         .box {
             margin-top: 30px;
             padding: 20px;
-            border: 1px solid #1f3a3a;
+            border: 1px solid rgba(60, 255, 127, 0.2);
             border-radius: 10px;
             background: rgba(0, 255, 150, 0.05);
+            backdrop-filter: blur(5px);
         }
 
         .status {
@@ -64,21 +67,17 @@
 
 <div class="container">
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="GreenTestament Logo">
+    <img src="IMG_0058.png" alt="GreenTestament Logo">
 
-    <!-- TITLE -->
     <h1>GreenTestament</h1>
     <h2>Nachhaltige Serverlösungen</h2>
 
-    <!-- STATUS BOX -->
     <div class="box">
         <p class="status">🚧 Webseite im Aufbau 🚧</p>
         <p>Wir arbeiten aktuell an unserer Plattform für Serververmietung.</p>
         <p>Bald kannst du hier leistungsstarke und nachhaltige Server buchen.</p>
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
         © 2026 GreenTestament
     </div>
